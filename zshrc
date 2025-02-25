@@ -120,20 +120,3 @@ alias tvirun="singularity exec --nv --bind /ist:/ist --env HF_HUB_CACHE=$HF_HUB_
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-/ist/ist-share/vision/aomsin/miniconda3/bin/conda init zsh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/ist/ist-share/vision/aomsin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/ist/ist-share/vision/aomsin/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/ist/ist-share/vision/aomsin/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/ist/ist-share/vision/aomsin/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
